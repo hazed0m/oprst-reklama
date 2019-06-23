@@ -133,7 +133,7 @@ span.bold::after
 .container .block-wrapper > div .button-block
 {
     position: absolute;
-    bottom:30px;
+    bottom:35px;
     width:90%;
     background:#e51726;
     border-radius:50px;
