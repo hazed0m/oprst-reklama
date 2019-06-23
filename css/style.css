@@ -1,0 +1,269 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    width:100%;
+    height:100vh;
+    background: url(../img/reklama-back.png) no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding:5% 10%;
+}
+.container .wrapper 
+{
+    max-width: 1920px;
+    margin:0 auto;
+    padding-bottom: 20px;
+}
+.container .title-sell
+{
+    font-size:44px;
+    font-weight: 500;
+    text-align: center;
+}
+.container .block-wrapper
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap:wrap;
+}
+.container .block-wrapper > div
+{
+    width:478px;
+    height:640px;
+    background-color:#404042;
+    position: relative;    
+    border-radius:6px;
+    transition:0.3s;    
+    margin-top:150px;
+    transform:scale(1);
+}
+.container .block-wrapper > div .bottom-wrap
+{
+    padding: 0 25px 50px 25px;
+}
+.container .block-wrapper > div .video-block
+{
+    position: relative;
+    width:100%;
+    height:210px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background-color:#404042;
+    overflow: hidden; 
+}
+.container .block-wrapper > div .video-block video
+{    
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    overflow: hidden; 
+}
+.container .block-wrapper > div .title-block
+{
+    padding-top:20px;
+    font-size:40px;
+    color:#fff;    
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+span.bold
+{
+    font-weight: 700;
+    position: relative;
+}
+span.bold::after
+{
+    content:"";
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    width:120px;
+    border-bottom:3px solid #e51726;
+}
+.container .block-wrapper > div:before
+{
+    position: absolute;
+    top:-140px;
+    left:-13px;
+    font-size:240px;
+    color:#eaeaea;
+    transition:1s;
+}
+.container .block-wrapper > div:hover, .container .block-wrapper > div.open
+{
+    transform:scale(1.1);
+}
+.container .block-wrapper > div:hover::before
+{
+    top:-100px;
+    left:5px;
+}
+.container .block-wrapper .reklama-block:before
+{    
+    content:'01';
+}
+.container .block-wrapper .anim-block:before
+{    
+    content:'02';
+}
+.container .block-wrapper .threed-block:before
+{    
+    content:'03';
+}
+.container .block-wrapper .reklama-block video[poster],
+.container .block-wrapper .threed-block video[poster]{
+    object-fit: cover;
+    object-position: center;
+    transition:0.3s;
+}
+.container .block-wrapper .anim-block video[poster]
+{
+    object-fit: cover;
+    object-position: top;
+}
+.container .block-wrapper > div .text-block
+{
+    padding-top:20px;
+    font-size:24px;
+    color:#fff;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+.container .block-wrapper > div .button-block
+{
+    position: absolute;
+    bottom:30px;
+    width:90%;
+    background:#e51726;
+    border-radius:50px;
+    box-shadow: 0 5px 25px #e51726;
+    padding:25px 0;
+    text-align:center;
+    color:#fff;
+    font-size:24px;
+    font-weight:300;
+    cursor: pointer;
+    transition: 0.3s;    
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+.container .block-wrapper > div .button-block:hover 
+{
+    transform: scale(1.05);
+}      
+@media screen and (max-width:1440px)
+{
+    .container {
+        padding:5%;
+    } 
+}
+@media screen and (max-width:1024px)
+{
+    .container {
+        padding:5% 20%;
+    }
+    .container .block-wrapper > div .video-block
+    {
+        height:350px;
+    }
+    .container .block-wrapper > div
+    {
+        width:100%;
+        height:800px;
+    }
+    .container .block-wrapper > div .text-block, .container .block-wrapper > div .button-block
+    {
+        font-size:27px;
+    }
+    .container .block-wrapper > div .title-block
+    {
+        font-size:46px;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .container {
+        padding:5% 12%;
+    } 
+}
+@media screen and (max-width:768px)
+{
+    .container {
+        padding:5% 10%;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .container .block-wrapper > div {
+        height: 850px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .container .block-wrapper > div .video-block {
+        height: 320px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .container .block-wrapper > div {
+        height: auto;
+    }
+    .container .block-wrapper > div .video-block {
+        height: 250px;
+    }
+    .container .block-wrapper > div .title-block
+    {
+        font-size:27px;
+    }
+    .container .block-wrapper > div .text-block
+    {
+        font-size: 20px;
+    }
+    .container .block-wrapper > div .button-block
+    {
+        font-size: 18px;
+        position: relative;
+        bottom:0;
+        margin: 20px auto 10px auto;
+        padding:15px 10px;
+        width:auto;
+    }
+    .container .block-wrapper > div .bottom-wrap {
+        padding: 0 25px 10px 25px;
+    }
+    .container .title-sell {
+        font-size: 35px;
+    }
+    span.bold::after
+    {
+        width:100px;
+    }
+}
+@media screen and (max-width:375px)
+{
+    .container .block-wrapper > div .text-block {
+        font-size: 15px;
+    }
+    .container .block-wrapper > div .title-block {
+        font-size: 21px;
+    }
+    span.bold::after
+    {
+        width:80px;
+    }
+    .container .block-wrapper > div .button-block
+    {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .container .block-wrapper > div .video-block {
+        height: 170px;
+    }
+}
