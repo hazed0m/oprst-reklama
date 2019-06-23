@@ -8,7 +8,7 @@
 .container
 {
     width:100%;
-    /* height:100vh; */
+    height:100vh;   
     background: url(../img/reklama-back.png) no-repeat;
     background-position: center;
     background-size:cover;
@@ -42,7 +42,6 @@
     border-radius:6px;
     transition:0.3s;    
     margin-top:150px;
-    transform:scale(1);
 }
 .container .block-wrapper > div .bottom-wrap
 {
@@ -95,7 +94,7 @@ span.bold::after
     color:#eaeaea;
     transition:1s;
 }
-.container .block-wrapper > div:hover, .container .block-wrapper > div.open
+.container .block-wrapper > div:hover
 {
     transform:scale(1.1);
 }
@@ -208,6 +207,10 @@ span.bold::after
 {
     .container .block-wrapper > div .video-block {
         height: 320px;
+    }
+    .container .block-wrapper > div:before
+    {
+        font-size:200px;
     }
 }
 @media screen and (max-width:450px)
