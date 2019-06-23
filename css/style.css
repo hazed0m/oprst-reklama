@@ -12,7 +12,7 @@
     background: url(../img/reklama-back.png) no-repeat;
     background-position: center;
     background-size:cover;
-    padding:5% 10%;
+    padding: 2% 7%;
 }
 .container .wrapper 
 {
@@ -94,10 +94,6 @@ span.bold::after
     color:#eaeaea;
     transition:1s;
 }
-.container .block-wrapper > div:hover
-{
-    transform:scale(1.1);
-}
 .container .block-wrapper > div:hover::before
 {
     top:-100px;
@@ -152,7 +148,7 @@ span.bold::after
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
 }
-.container .block-wrapper > div .button-block:hover 
+.container .block-wrapper > div .button-block:hover, .container .block-wrapper > div:hover
 {
     transform: scale(1.05);
 }      
