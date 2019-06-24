@@ -327,6 +327,10 @@ span.bold::after
     {
         min-height: 0px;
     }
+    .container .block-wrapper
+    {
+        top:18%!important;
+    }
 }
 @media screen and (max-width:375px)
 {
