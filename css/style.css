@@ -40,6 +40,10 @@
     margin-top:150px;  
     position: relative;
 }
+.container .block-wrapper .inner-wrap > div,.container .block-wrapper .inner-wrap
+{
+    width:478px;
+}
 .container .block-wrapper .inner-wrap > div
 {
     width:478px;
