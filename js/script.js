@@ -1,4 +1,4 @@
-var autoHeight = $('.block-wrapper > div').height();
+var autoHeight = $('.block-wrapper .inner-wrap > div').height();
 $('.block-wrapper .reklama-block, .block-wrapper .anim-block, .block-wrapper .threed-block').hover(
     function(){    
         let currentH = $(this).height();
