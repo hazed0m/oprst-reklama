@@ -4,6 +4,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 .container
 {
@@ -310,7 +311,7 @@ span.bold::after
     {
         font-size: 18px;
         padding:15px 10px;
-        margin:0 auto;
+        left:5%;
     }
     .container .title-sell {
         font-size: 35px;
