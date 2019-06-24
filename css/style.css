@@ -35,7 +35,7 @@
 .container .block-wrapper > div
 {
     width:478px;
-    height:640px;
+    height:auto;
     background-color:#404042;
     position: relative;    
     border-radius:6px;
@@ -87,7 +87,7 @@ span.bold::after
 .container .block-wrapper > div:before
 {
     position: absolute;
-    top:-140px;
+    top:-180px;
     left:-13px;
     font-size:240px;
     color:#eaeaea;
@@ -95,7 +95,7 @@ span.bold::after
 }
 .container .block-wrapper > div:hover::before
 {
-    top:-100px;
+    top:-160px;
     left:5px;
 }
 .container .block-wrapper .reklama-block:before
@@ -128,6 +128,8 @@ span.bold::after
     color:#fff;
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
+    overflow: hidden;
+    background-color: #404042;
 }
 .container .block-wrapper > div .button-block
 {
@@ -142,20 +144,60 @@ span.bold::after
     color:#fff;
     font-size:24px;
     font-weight:300;
-    cursor: pointer;
-    transition: 0.3s;    
+    cursor: pointer;   
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
+    display: none;
 }
-.container .block-wrapper > div .button-block:hover, .container .block-wrapper > div:hover
+.container .block-wrapper > div:hover
 {
     transform: scale(1.05);
 }      
-@media screen and (max-width:1440px)
+.container .block-wrapper > div .button-block:hover
+{
+    color:#000;
+    background:#fff;
+    box-shadow: 0 5px 25px #fff;
+    transition:0.3s;
+}
+@media screen and (max-width:1800px)
 {
     .container {
-        padding:5%;
+        padding:5% 0;
     } 
+    .container .block-wrapper > div
+    {
+        width:31%;
+        height:auto;
+    }
+    .container .block-wrapper > div .text-block
+    {        
+        /* margin-bottom:100px; */
+    }
+    .container .block-wrapper > div .button-block
+    {
+        bottom:20px;
+        margin:0 auto;
+    }
+    .container .block-wrapper > div .title-block
+    {
+        font-size:37px;
+    }
+    .container .block-wrapper > div .video-block
+    {
+        height:auto;
+    }
+}
+@media screen and (max-width:1366px)
+{
+    .container .block-wrapper > div
+    {
+        width:478px;
+    }
+    .container .block-wrapper > div .video-block
+    {
+        height:208px;
+    }
 }
 @media screen and (max-width:1024px)
 {
