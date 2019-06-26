@@ -162,6 +162,7 @@ span.bold::after
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     display: none;
+    color:#fff;
 }
 .container .block-wrapper .inner-wrap > div a 
 {
@@ -185,6 +186,7 @@ span.bold::after
 {
     background:#fff;
     box-shadow: 0 5px 25px #fff;
+    color:#000;
     transition:0.3s;
 }
 .container .block-wrapper .inner-wrap > div a:hover 
